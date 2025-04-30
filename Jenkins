@@ -3,7 +3,7 @@ pipeline {
 
     environment {
         DOCKER_IMAGE = "nightsight30/mywebsitemain"
-        DOCKER_HUB_CREDENTIALS = "docker-hub-creds-v4"
+        DOCKER_HUB_CREDENTIALS = "mywebsitemain"
         CONTAINER_NAME = "mywebsitemain"
         HOST_PORT = "8083"
     }
