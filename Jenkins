@@ -11,7 +11,7 @@ pipeline {
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/nightsight30-sky/mywebsitemain'
+                git branch: 'master', url: 'https://github.com/nightsight30-sky/mywebsitemain1'
             }
         }
         stage('Build Docker Image') {
