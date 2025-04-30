@@ -2,16 +2,16 @@ pipeline {
     agent any
 
     environment {
-        DOCKER_IMAGE = "nightsight30/mywebsitemain"
+        DOCKER_IMAGE = "nightsight30/mywebsitemain-app"
         DOCKER_HUB_CREDENTIALS = "docker-hub-creds-v4"
-        CONTAINER_NAME = "mywebsitemain"
+        CONTAINER_NAME = "mywebsitemain-app"
         HOST_PORT = "8083"
     }
 
     stages {
         stage('Clone Repository') {
             steps {
-                git branch: 'master', url: 'https://github.com/nightsight30-sky/mywebsitemain1.git'
+                git branch: 'master', url: 'https://github.com/nightsight30-sky/mywebsitemain1-ci-cd'
             }
         }
         stage('Build Docker Image') {
